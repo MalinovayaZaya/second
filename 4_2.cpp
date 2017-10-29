@@ -4,18 +4,18 @@
 using namespace std;
 int main()
 {
-int n, m = 0;
-cin >> n;
-int A[n];
-for (int i = 0; i < n; i++){
+int N, m = 0;
+cin >> N;
+int* A=new int[N];
+for (int i = 0; i < N; i++){
 cin >> A[i];
 }
-if (n < 5)
+if (N < 5)
 cout << "wrong data" << endl;
 else {
 m = A[0] + A[4];
-for (int i = 0; i<n-4; i++){
-for (int j = i + 4; j<n; j++){
+for (int i = 0; i<N-4; i++){
+for (int j = i + 4; j<N; j++){
 if (m > A[i] + A[j])
 m = A[i] + A[j];
 }
