@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-min(double a, double b, double c){
+double min(double a, double b, double c){
 double w=a;
 if (w>b){
         w=b;
@@ -14,7 +14,7 @@ if (w>c){
 }
 return w;
     }
-max(double a, double b, double c){
+double max(double a, double b, double c){
 double q=a;
 if (q<b){
     q=b;
@@ -25,11 +25,11 @@ if (q<c){
 }
 return q;
     }
-avg(double a, double b, double c){
+double avg(double a, double b, double c){
 double s=(a+b+c)/3;
 return s;
 }
-med(double a, double b, double c){
+double med(double a, double b, double c){
 if(a>b){
     if(a<c){
         return a; //c>a>b
